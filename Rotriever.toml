@@ -1,0 +1,7 @@
+name = "test-packages"
+author = "ZoteTheMighty"
+license = ""
+version = "0.1.0"
+
+[dependencies]
+TestEZ = { git = "https://github.com/Roblox/testez.git" } # nothing (defaults to 'master')
