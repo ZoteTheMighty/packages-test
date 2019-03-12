@@ -4,4 +4,7 @@ license = ""
 version = "0.1.0"
 
 [dependencies]
-TestEZ = { git = "https://github.com/Roblox/testez.git" } # nothing (defaults to 'master')
+Roact = { git = "https://github.com/Roblox/roact.git" }
+Rodux = { git = "https://github.com/Roblox/rodux.git", rev = "abe28472" }
+TestEZ = { git = "https://github.com/Roblox/testez.git" }
+RoactRodux = { git = "https://github.com/Roblox/roact-rodux.git", rev = "v1.0.0-pre2" }
