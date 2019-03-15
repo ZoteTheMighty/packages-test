@@ -1,10 +1,9 @@
--- Generator information:
--- Human name: Packages Test
--- Variable name: PackagesTest
--- Repo name: packages-test
-
-local hello = require(script.hello)
+--[[
+	A tiny library with a function to create a big ol' button
+	in the middle of the screen
+]]
+local makePrintButton = require(script.makePrintButton)
 
 return {
-	hello = hello,
+	makePrintButton = makePrintButton,
 }
