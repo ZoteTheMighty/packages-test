@@ -1,10 +1,8 @@
--- Generator information:
--- Human name: Packages Test
--- Variable name: PackagesTest
--- Repo name: packages-test
-
-local hello = require(script.hello)
+--[[
+	A tiny library that makes a button that prints a lil table flip emote
+]]
+local makeTableButton = require(script.makeTableButton)
 
 return {
-	hello = hello,
+	makeTableButton = makeTableButton,
 }

@@ -1,10 +1,9 @@
-name = "test-packages"
+name = "TableButton"
 author = "ZoteTheMighty"
 license = ""
 version = "0.1.0"
+content_root = "src"
 
 [dependencies]
-Roact = { git = "https://github.com/Roblox/roact.git" }
-Rodux = { git = "https://github.com/Roblox/rodux.git", rev = "abe28472" }
-TestEZ = { git = "https://github.com/Roblox/testez.git" }
-RoactRodux = { git = "https://github.com/Roblox/roact-rodux.git", rev = "v1.0.0-pre2" }
+FlipTable = { git = "https://github.com/ZoteTheMighty/packages-test", rev = "LibFlipTable" }
+PrintButton = { git = "https://github.com/ZoteTheMighty/packages-test", rev = "LibPrintButton" }
