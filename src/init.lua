@@ -1,10 +1,9 @@
--- Generator information:
--- Human name: Packages Test
--- Variable name: PackagesTest
--- Repo name: packages-test
-
-local hello = require(script.hello)
+--[[
+	A tiny library that provides a function to get a string of
+	a cute lil Unicode guy flipping a table
+]]
+local flipTable = require(script.flipTable)
 
 return {
-	hello = hello,
+	flipTable = flipTable,
 }
