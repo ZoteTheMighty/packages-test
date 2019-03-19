@@ -1,31 +1,20 @@
 local Players = game:GetService("Players")
 local Modules = script.Parent.Parent
 
-local Roact = require(Modules.Roact)
-
-local function PrintButton(props)
-	local outputText = props.outputText
-	return Roact.createElement("TextButton", {
-		Text = "Click me!",
-		Size = UDim2.new(0, 200, 0, 200),
-		Position = UDim2.new(0.5, 0, 0.5, 0),
-		AnchorPoint = Vector2.new(0.5, 0.5),
-		[Roact.Event.Activated] = function()
-			print(outputText)
-		end,
-	})
-end
+local ButtonMaker = require(Modules.ButtonMaker)
 
 local function makePrintButton(outputText)
 	local parent = Players.LocalPlayer
+	local printButton = ButtonMaker.makeButton()
+	printButton.Activated:Connect(function()
+		print(outputText)
+	end)
 
-	local Gui = Roact.createElement("ScreenGui", {
-		PrintButton = Roact.createElement(PrintButton, {
-			outputText = outputText,
-		})
-	})
+	local ScreenGui = Instance.new("ScreenGui")
+	printButton.Parent = ScreenGui
+	ScreenGui.Parent = parent
 
-	return Roact.mount(Gui, parent, "PrintButton")
+	return printButton
 end
 
 return makePrintButton

@@ -5,4 +5,4 @@ version = "0.1.0"
 content_root = "src"
 
 [dependencies]
-Roact = { git = "https://github.com/Roblox/roact.git" }
+ButtonMaker = { git = "https://github.com/ZoteTheMighty/packages-test.git", rev = "LibButtonMaker" }
