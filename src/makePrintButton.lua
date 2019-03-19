@@ -4,7 +4,7 @@ local Modules = script.Parent.Parent
 local ButtonMaker = require(Modules.ButtonMaker)
 
 local function makePrintButton(outputText)
-	local parent = Players.LocalPlayer
+	local parent = Players.LocalPlayer:WaitForChild("PlayerGui")
 	local printButton = ButtonMaker.makeButton()
 	printButton.Activated:Connect(function()
 		print(outputText)
