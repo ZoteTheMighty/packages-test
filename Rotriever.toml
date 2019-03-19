@@ -1,8 +1,5 @@
-name = "PrintButton"
+name = "ButtonMaker"
 author = "ZoteTheMighty"
 license = ""
 version = "0.1.0"
 content_root = "src"
-
-[dependencies]
-ButtonMaker = { git = "https://github.com/ZoteTheMighty/packages-test.git", rev = "LibButtonMaker" }
