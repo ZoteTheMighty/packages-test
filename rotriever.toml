@@ -4,5 +4,5 @@ license = ""
 version = "0.1.0"
 content_root = "src"
 
-[[dependencies]]
+[dependencies]
 Cryo = { path = "../cryo" }
