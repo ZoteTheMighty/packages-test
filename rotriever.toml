@@ -1,4 +1,4 @@
-name = "test-packages"
+name = "NonModuleScript"
 author = "ZoteTheMighty"
 license = ""
 content_root = "src"
