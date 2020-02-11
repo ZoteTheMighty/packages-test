@@ -1,7 +1,7 @@
-name = "test-packages"
+name = "zotethemighty/test-packages"
 author = "ZoteTheMighty"
 license = ""
-version = "0.1.0"
+version = "1.1.0"
 
 [dependencies]
 Roact = { git = "https://github.com/Roblox/roact.git" }
